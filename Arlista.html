@@ -129,6 +129,19 @@
         <img src="C:\Users\Kata.INNOVENG\Desktop\Webdesign\Programozás\galeria9.jpg" alt="Kép 9">
         <img src="C:\Users\Kata.INNOVENG\Desktop\Webdesign\Programozás\galeria10.jpg" alt="Kép 10">
 
+        .gallery {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    gap: 10px; 
+}
+
+
+.gallery img {
+    width: 100%; 
+    height: 150px; 
+    object-fit: cover;
+    border-radius: 5px; 
+}
 
 
     </div>
