@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weboldal</title>
+    <style>
+        body {
+            font-family: Roboto;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ff9b71;
+            padding: 20px;
+            color: #2b3a67;
+        }
+        .logo {
+            font-size: 30px;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 30px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color:#2b3a67 ;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #fffd82;
+        }
+        .main-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .text-section {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .text-section h1 {
+            font-size: 2em;
+            color: #2b3a67;
+        }
+        .text-section p {
+            color: #2b3a67;
+        }
+        .image-section {
+            flex: 1;
+        }
+        .image-section img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .box {
+            background-color: #fffd82;
+            color: #b56b45;
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            width: calc(33.333% - 20px);
+            box-sizing: border-box;
+        }
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            .text-section {
+                margin-right: 0;
+            }
+            .box {
+                width: calc(50% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            .box {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Weboldal Logó</div>
+    <nav>
+        <ul>
+            <li><a href="#home">Főoldal</a></li>
+            <li><a href="#hatoanyagok">Hatóanyagok</a></li>
+            <li><a href="#szolglaltatasok">Szolgáltatások</a></li>
+            <li><a href="#arlista">Árlista</a></li>
+            <li><a href="#contact">Kapcsolat</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="main-content">
+    <div class="text-section">
+        <h1>Üdvözlünk a Babor Kozmetika weboldalán!</h1>
+        <p>
+            
+
+
+Ha professzionális kezeléseket keresel, amelyeket a legmodernebb technológiával és hatóanyagokkal végzünk, a legjobb helyen jársz! 
+Szalonunkban célunk, hogy vendégeink számára a szépségápolás valódi élménnyé váljon. 
+
+Magas szintű kozmetikai szakértelmünkkel, személyre szabott kezeléseinkkel és prémium termékkel szeretnénk elérni, hogy minden vendégünk a legjobban érezze magát a bőrében. Szalonunk kellemes légköre biztosítja, hogy minden látogatás igazi feltöltődés legyen a vendégek számára.
+Kínálatunkban megtalálhatóak a bőrmegújító arckezelések, luxus arc- és testmasszázsok, bőrfiatalító eljárások, valamint különleges smink- és szempilla-szolgáltatások is. Munkánk során a TE egyedi igényedeit figyelembe véve dolgozunk, hogy a lehető legjobb eredményeket érjük el, legyen szó akár egy gyors frissítő kezelésről vagy egy teljes testet érintő szolgáltatásról.
+
+Látogass el hozzánk, és tapasztald meg a professzionális törődés élményét! 
+        </p>
+    </div>
+    <div class="image-section">
+        <img src="C:\Users\Kata.INNOVENG\Desktop\Webdesign\Programozás\Kezdoolalkep.jpg" alt="Kép">
+    </div>
+</div>
+
+<h1>Hatóanyagok</h1>
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konténerek</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+        .box {
+            background-color: #fffd82;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            width: calc(33.333% - 20px);
+            box-sizing: border-box;
+            text-align: left;
+        }
+        .box-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .box-header h2 {
+            font-size: 18px;
+            margin: 0;
+        }
+        .box-header img {
+            max-height: 40px;
+            border-radius: 4px;
+        }
+        .box p {
+            font-size: 14px;
+            color: #b56b45;
+        }
+        @media (max-width: 768px) {
+            .box {
+                width: calc(50% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            .box {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="box">
+        <div class="box-header">
+            <h2>Hyaluronsav</h2>
+            <img src="https://via.placeholder.com/50" alt="Kép">
+        </div>
+        <p>A hyaluronsav rendkívül előnyös hatással van az arcbőrre, különösen a hidratálás, feszesítés és a fiatalítás szempontjából
+            ... tovább</p>
+    </div>
+    <div class="box">
+        <div class="box-header">
+            <h2>Retinol</h2>
+            <img src="https://via.placeholder.com/50" alt="Kép">
+        </div>
+        <p>A retinol az arcbőr ápolásának egyik leghatékonyabb összetevője, amely különösen népszerű az öregedésgátló és bőrmegújító hatása miatt. 
+            ... tovább</p>
+    </div>
+    <div class="box">
+        <div class="box-header">
+            <h2>C Vitamin</h2>
+            <img src="https://via.placeholder.com/50" alt="Kép">
+        </div>
+        <p>A C-vitamin az egyik leghatásosabb bőrápoló összetevő, amely széleskörűen hozzájárul az arcbőr egészséges és fiatalos megjelenéséhez.  
+            ... tovább</p>
+    </div>
+    <div class="box">
+        <div class="box-header">
+            <h2>Niacinamid (B3 vitamin)</h2>
+            <img src="https://via.placeholder.com/50" alt="Kép">
+        </div>
+        <p>A niacinamid az arcbőr ápolásában sokoldalúan alkalmazható, mivel számos jótékony hatással bír minden bőrtípus számára. 
+            ... tovább</p>
+    </div>
+    <div class="box">
+        <div class="box-header">
+            <h2>Peptidek</h2>
+            <img src="https://via.placeholder.com/50" alt="Kép">
+        </div>
+        <p>A peptidek rendkívül népszerűek a bőrápolásban, mivel segítenek a bőr rugalmasságának, feszességének és fiatalos  megjelenésének fenntartásában.
+            ...tovább</p>
+    </div>
+    <div class="box">
+        <div class="box-header">
+            <h2>Glikolsav és tejsav</h2>
+            <img src="https://via.placeholder.com/50" alt="Kép">
+        </div>
+        <p>A glikolsav és a tejsav a két legnépszerűbb alfa-hidroxisav (AHA), melyek gyengéd hámlasztó hatásukkal jelentősen javítják a bőr textúráját és megjelenését.
+            ... tovább</p>
+    </div>
+</div>
+
+</body>
+</html>
+
+
+        
+        
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Példa</title>
+    <style>
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            background-color: #ff9b71;
+            color: #2b3a67;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .text-section {
+            max-width: 50%;
+        }
+        .text-section p {
+            margin: 0 0 10px;
+            line-height: 1.5;
+        }
+        .logo-section {
+            display: flex;
+            gap: 10px;
+        }
+        .logo-section img {
+            width: 50px;
+            height: bold;
+            border-radius: 0px;
+            background-color: #ff9b71;
+            padding: 0px;
+
+        }
+    </style>
+</head>
+<body>
+
+<footer>
+    <div class="text-section">
+        <p>Babor Kozmetika</p>
+        <p>Kapcsolat</p>
+        <p>Impresszum</p>
+    </div>
+    <div class="logo-section">
+        <img src="C:\Users\Kata.INNOVENG\Desktop\Webdesign\Programozás\Facebook logo.png" alt="Logó 1">
+        <img src="C:\Users\Kata.INNOVENG\Desktop\Webdesign\Programozás\Insta logo.png"alt="Logó 2">
+        <img src="C:\Users\Kata.INNOVENG\Desktop\Webdesign\Programozás\Youtube logo.png" alt="Logó 3">
+       
+    </div>
+</footer>
+
+</body>
+</html>

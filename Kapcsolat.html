@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapcsolat</title>
+    <style>
+        body {
+            font-family: Roboto;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ff9b71;
+            padding: 20px;
+            color: #2b3a67;
+        }
+        
+        .logo{
+            font-size: 30px
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 30px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color:#2b3a67 ;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #fffd82;
+        }
+        .main-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .text-section {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .text-section h1 {
+            font-size: 2em;
+            color: #2b3a67;
+        }
+        .text-section p {
+            color: #2b3a67;
+        }
+        .image-section {
+            flex: 1;
+        }
+        .image-section img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .box {
+            background-color: #fffd82;
+            color: #b56b45;
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            width: calc(33.333% - 20px);
+            box-sizing: border-box;
+        }
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            .text-section {
+                margin-right: 0;
+            }
+            .box {
+                width: calc(50% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            .box {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="" alt="Weboldal Logó">
+    <nav>
+        <ul>
+            <li><p><a href="Kezdolap.html">Főoldal</a></li>
+                <li><p><a href="Hatoanyag.html">Hatóanyagok</a></li> 
+                <li><p><a href="Szolgaltatas.html">Szolgáltatások</a></li>
+                <li><p><a href="Arlista.html">Árlista</a></li>
+                <li><p><a href="Kapcsolat.html">Kapcsolat</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="main-content">
+    <div class="text-section">
+        <h1>KAPCSOLAT</h1>
+        <p>
+            
+
+
+            BABOR KOZMETIKA
+
+            <br>Kozmetikánk címe: 1111 Budapest, Márton u. 4.
+            <br>Bejelentkezés: 06 30 112 5112, 06 70 112 5112
+            <br>Email: bejelentkezes@baborkozmetika.hu
+            
+            <br>Nyitvatartás:
+            <br>Hétfő: zárva
+            <br>Kedd: 08.00-19.00
+            <br>Szerda: 08.00-19.00
+            <br>Csütörtök: 08.00-19.00
+            <br>Péntek: 08.00-19.00
+            <br>Szombat: 10.00-21.00
+            <br>Vasárnap: 10.00-21.00
+            <p></p>
+
+            <br> IMPRESSZUM
+
+            <br>Cégnév: Babor Kozmetikai Kft
+            <br>Székhely: 1111 Budapest, Jónás u. 15.
+            <br>Telephely: 1111 Budapest, Márton u. 4.
+            <br>Adószám: 1122333-2-44
+            <br>Cégjegyzékszám: 01-09-1122333
+            <br>Telefon: 0611548745
+            <br>Email: babor@baborkozmatika.hu
+            <br>Facebook: Babor Kozmetika
+            <br>Ügyfélszolgálat elérhetősége: hétköznapokon 08.00-19.00
+            <br>Bankszámlaszám: 11221122-33445566-77889911
+        </p>
+    </div>
+    <div class="image-section">
+        <img src="C:\Users\Kata.INNOVENG\Desktop\Webdesign\Programozás\kapcsolatkep.jpg" alt="kapcsolat">
+    </div>
+</div>
+
+<!DOCTYPE html>
+  <html>
+    <head>
+
+    </head>
+    <body>
+
+      <p id="szoveg">Kedves Norbi, ha tetszik az oldal nyomd meg a gombot!</p>
+
+      <button onclick="gomb()">Tetszik</button>
+
+       <script>
+            function gomb() {
+                document.getElementById("szoveg").innerHTML = "Köszönöm! :-) ";
+         }
+       </script>
+
+    </body>
+</html> 
+
+
+
+   
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Példa</title>
+    <style>
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            background-color: #ff9b71;
+            color: #2b3a67;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .text-section {
+            max-width: 50%;
+        }
+        .text-section p {
+            margin: 0 0 10px;
+            line-height: 1.5;
+        }
+        .logo-section {
+            display: flex;
+            gap: 10px;
+        }
+        .logo-section img {
+            width: 50px;
+            height: bold;
+            border-radius: 0px;
+            background-color: #ff9b71;
+            padding: 0px;
+
+        }
+    </style>
+</head>
+<body>
+
+<footer>
+    <div class="text-section">
+        <p>Babor Kozmetika</p>
+        <p>Kapcsolat</p>
+        <p>Impresszum</p>
+    </div>
+    <div class="logo-section">
+        <img src="C:\Users\Kata.INNOVENG\Desktop\Webdesign\Programozás\Facebook logo.png" alt="Logó 1">
+        <img src="C:\Users\Kata.INNOVENG\Desktop\Webdesign\Programozás\Insta logo.png"alt="Logó 2">
+        <img src="C:\Users\Kata.INNOVENG\Desktop\Webdesign\Programozás\Youtube logo.png" alt="Logó 3">
+       
+    </div>
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+    

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>szolgaltatasok</title>
+    <style>
+        body {
+            font-family: Roboto;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff9b71;
+            color: #2b3a67;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header img {
+            height: 50px;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: #2b3a67;
+            text-decoration: none;
+        }
+        .container {
+            padding: 20px;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .text {
+            flex: 1;
+        }
+        .image {
+            flex: 1;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .text-container {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="C:\Users\Kata.INNOVENG\Desktop\Webdesign\Programozás\logo2.jpg" alt="Weboldal Logó">
+    <nav>
+        <ul>
+            <li><p><a href="Kezdolap.html">Főoldal</a></li>
+                <li><p><a href="Hatoanyag.html">Hatóanyagok</a></li> 
+                <li><p><a href="Szolgaltatas.html">Szolgáltatások</a></li>
+                <li><p><a href="Arlista.html">Árlista</a></li>
+                <li><p><a href="Kapcsolat.html">Kapcsolat</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container">
+    
+        <div class="image">
+            <img src="C:\Users\Kata.INNOVENG\Desktop\Webdesign\Programozás\árlista.png" width="800" height="800"alt="Szolgaltatasok">
+        </div>
+    </div>
+
+
+    <!DOCTYPE html>
+    <html lang="hu">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Képgaléria</title>
+        <style>
+            .gallery {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                gap: 10px;
+                max-width: 1200px;
+                margin: 20px auto;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+            .gallery img {
+                width: 100%;
+                height: auto;
+                border-radius: 8px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s, box-shadow 0.3s;
+            }
+            .gallery img:hover {
+                transform: scale(1.05);
+                box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+            }
+        </style>
+    </head>
+    <body>
+
+        <h1>Galéria</h1>
+    
+    <div class="gallery">
+        <img src="C:\Users\Kata.INNOVENG\Desktop\Webdesign\Programozás\galeria1.jpg" width="200" height="200" alt="Kép 1">
+        <img src="C:\Users\Kata.INNOVENG\Desktop\Webdesign\Programozás\galeria2.jpg" width="200" height="200"alt="Kép 2">
+        <img src="C:\Users\Kata.INNOVENG\Desktop\Webdesign\Programozás\galeria3.jpg" alt="Kép 3">
+        <img src="C:\Users\Kata.INNOVENG\Desktop\Webdesign\Programozás\galeria4.jpg" alt="Kép 4">
+        <img src="C:\Users\Kata.INNOVENG\Desktop\Webdesign\Programozás\galeria5.jpg" alt="Kép 5">
+        <img src="C:\Users\Kata.INNOVENG\Desktop\Webdesign\Programozás\galeria6.jpg" alt="Kép 6">
+        <img src="C:\Users\Kata.INNOVENG\Desktop\Webdesign\Programozás\galeria7.jpg" alt="Kép 7">
+        <img src="C:\Users\Kata.INNOVENG\Desktop\Webdesign\Programozás\galeria8.jpg" alt="Kép 8">
+        <img src="C:\Users\Kata.INNOVENG\Desktop\Webdesign\Programozás\galeria9.jpg" alt="Kép 9">
+        <img src="C:\Users\Kata.INNOVENG\Desktop\Webdesign\Programozás\galeria10.jpg" alt="Kép 10">
+
+
+
+    </div>
+    
+    </body>
+    </html>
+    
+       
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Példa</title>
+    <style>
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            background-color: #ff9b71;
+            color: #2b3a67;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .text-section {
+            max-width: 50%;
+        }
+        .text-section p {
+            margin: 0 0 10px;
+            line-height: 1.5;
+        }
+        .logo-section {
+            display: flex;
+            gap: 10px;
+        }
+        .logo-section img {
+            width: 50px;
+            height: bold;
+            border-radius: 0px;
+            background-color: #ff9b71;
+            padding: 0px;
+
+        }
+    </style>
+</head>
+<body>
+
+<footer>
+    <div class="text-section">
+        <p>Babor Kozmetika</p>
+        <p>Kapcsolat</p>
+        <p>Impresszum</p>
+    </div>
+    <div class="logo-section">
+        <img src="C:\Users\Kata.INNOVENG\Desktop\Webdesign\Programozás\Facebook logo.png" alt="Logó 1">
+        <img src="C:\Users\Kata.INNOVENG\Desktop\Webdesign\Programozás\Insta logo.png"alt="Logó 2">
+        <img src="C:\Users\Kata.INNOVENG\Desktop\Webdesign\Programozás\Youtube logo.png" alt="Logó 3">
+       
+    </div>
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+    

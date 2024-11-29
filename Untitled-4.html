@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weboldal</title>
+    <style>
+        body {
+            font-family: Roboto;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ff9b71;
+            padding: 20px;
+            color: #2b3a67;
+        }
+        .logo {
+            font-size: 30px;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 30px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color:#2b3a67 ;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #fffd82;
+        }
+        .main-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .text-section {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .text-section h1 {
+            font-size: 2em;
+            color: #2b3a67;
+        }
+        .text-section p {
+            color: #2b3a67;
+        }
+        .image-section {
+            flex: 1;
+        }
+        .image-section img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .box {
+            background-color: #fffd82;
+            color: #b56b45;
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            width: calc(33.333% - 20px);
+            box-sizing: border-box;
+        }
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            .text-section {
+                margin-right: 0;
+            }
+            .box {
+                width: calc(50% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            .box {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Weboldal Logó</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Főoldal</a></li>
+                <li><a href="#hatoanyagok">Hatóanyagok</a></li>
+                <li><a href="#szolglaltatasok">Szolgáltatások</a></li>
+                <li><a href="#arlista">Árlista</a></li>
+                <li><a href="#contact">Kapcsolat</a></li>
+            </ul>
+        </nav>
+    </header>
